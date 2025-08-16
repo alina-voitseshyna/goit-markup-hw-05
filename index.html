@@ -403,7 +403,65 @@
           </li>
         </ul>
       </div>
+      <div class="container subscribe-container">
+        <form class="form" name="subscribe-form">
+          <label class="form-label">
+      Subscribe
+      <input class="form-input" type="email" name="email" placeholder="E-mail"/>
+          </label>
+         <button class="form-button" type="submit">Subscribe
+            <svg class="subscribe-icon" width="24" height="20">
+<use href="./images/icons.svg#icon-send"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
       </div>
     </footer>
+    <div class="backdrop is-open">
+<div class="modal">
+    <button type="button" class="button-modal">
+      <svg class="close-icon" width="8" height="8">
+        <use href="./images/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+  <p class="form-text">
+    Leave your contacts and we will call you back
+  </p>
+  <form class="callback-form">
+
+    <div class="form-name">
+<label class="form-label-modal" for="input-name">Name</label>
+<div class="input-wrapper">
+  <input class="modal-form-input" name="input-name" id="input-name" type="text"/>
+  <svg class="icon-person" width="12" height="12">
+    <use href="./images/icons.svg#icon-person"></use>
+  </svg>
+</div>
+    </div>
+
+    <div class="form-phone">
+      <label class="form-label-modal" for="input-phone">Phone</label>
+      <div class="input-wrapper">
+        <input class="modal-form-input" name="input-phone" id="input-phone" type="tel"/>
+        <svg class="icon-phone" width="13" height="13">
+          <use href="./images/icons.svg#icon-phone"></use>
+        </svg>
+      </div>
+          </div>
+
+          <div class="form-email">
+            <label class="form-label-modal" for="input-email">Email</label>
+            <div class="input-wrapper">
+              <input class="modal-form-input" name="input-email" id="input-email" type="email"/>
+              <svg class="icon-email" width="16" height="12">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+                </div>
+    </form>
+</div>
+
+    </div>
   </body>
 </html>
