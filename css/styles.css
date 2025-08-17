@@ -579,15 +579,19 @@ cursor: pointer;
 }
 
 .button-modal:focus,
-.button-modal:hover, {
+.button-modal:hover {
   background-color: #404bbf; 
   border: none; 
-  fill: #ffffff;
 }
 
 .close-icon {
   fill: #2e2f42;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+}
+
+.close-icon:focus,
+.close-icon:hover {
+  fill: #ffffff;
 }
 
 .form-text {
@@ -615,11 +619,6 @@ cursor: pointer;
 
 .input-wrapper {
   position: relative; 
-}
-
-.callback-form {
-  display: flex;
-  margin-left: 24px;
 }
 
 .form-modal{
@@ -656,7 +655,6 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .callback-form {
   display: flex;
   flex-direction: column;
-
 }
 
 .icon-phone {
@@ -668,11 +666,10 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .textarea-comment {
-  /*font-size: 12px;
+  font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
-  */
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   width: 100%;
@@ -683,13 +680,6 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   resize: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
   border-color: #4D5AE5; 
-}
-
-.textarea-comment::placeholder {
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.04em;
-  color: rgba(46, 47, 66, 0.4);
 }
 
 .textarea-comment:focus {
@@ -720,12 +710,6 @@ justify-content: center;
 fill: transparent; 
 }
 
-.visually-hidden:checked {
-background-color: #404bbf; 
-border: none; 
-fill: #F4F4FD; 
-}
-
 .policy-link {
   color: #4d5ae5; 
   text-decoration: underline;
@@ -748,4 +732,10 @@ fill: #F4F4FD;
   border: none;
   background-color: #4d5ae5;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+}
+
+.input-checkbox:checked + .label > .span-privacy {
+background-color: #404bbf; 
+border: none; 
+fill: #F4F4FD; 
 }
