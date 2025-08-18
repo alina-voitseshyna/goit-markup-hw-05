@@ -465,6 +465,11 @@ margin: auto;
 flex-direction: column;
 gap: 16px;*/
 
+.subscribe-text {
+  display: block;
+  margin-left: 80px;
+}
+
 .form-subscribe {
   margin-bottom: 16px;
 font-weight: 500;
@@ -600,7 +605,6 @@ cursor: pointer;
 }
 
 .form-text {
-  margin-top: 72px;
   margin-bottom: 16px;
   font-weight: 500;
   font-size: 16px;
@@ -649,7 +653,6 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-modal {
-  fill: #4d5ae5;
   position: absolute;
   left: 16px;
   top: 50%; 
